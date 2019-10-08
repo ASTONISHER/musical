@@ -190,7 +190,13 @@ figure.sub1:hover p {
 }
 
 
-
+.synopsis{
+	display: block;
+	left: 40%;
+	max-width: 40%;
+	position: relative;
+	top: 75%;
+}
 
 
 
