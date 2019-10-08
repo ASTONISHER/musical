@@ -7,7 +7,7 @@
 ol,ul { list-style: none; }
 a { outline:0; text-decoration:none; color:#bbb;}
 img { border:0;}
-body { position:fixed;  width:100%; height:100%; background:#111;}
+body { position:fixed;  width:100%; height:100%; background:#111;  font: bold 15px play, arial; overflow: auto;}
 
 /*vidio*/
 .vid { width:100%; height:100%; position:relative; top:-80px; left:0px; opacity:0.6; }
@@ -39,61 +39,19 @@ header { width:700px; height:100%; position:fixed; top:0px; left:-420px; backgro
 .grid{float: right; background-color: #252137; width: 1000px; height: 300px; margin-right: 100px; padding-top: 40px; padding-left: 40px; padding-bottom: 40px;}
 .sub1{display: inline-block; margin-right: 20px;}
 
-figure.sub1{
-	background: -webkit-linear-gradient(-45deg, #342F4B 0%,#cc6055 100%);
-	background: linear-gradient(-45deg, #342F4B 0%,#cc6055 100%);
-	overflow:hidden;
-}
-figure.sub1 img, p{
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-}
-figure.sub1:hover img {
-	opacity: 0.7;
-	-webkit-transform: scale3d(2,2,1);
-	transform: scale3d(2,2,1);
-	overflow:hidden;
-}
+figure.sub1{background: -webkit-linear-gradient(-45deg, #342F4B 0%,#cc6055 100%);background: linear-gradient(-45deg, #342F4B 0%,#cc6055 100%);overflow:hidden;}
+figure.sub1 img, p{-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;transition: opacity 0.35s, transform 0.35s;}
+figure.sub1:hover img {opacity: 0.7;-webkit-transform: scale3d(2,2,1);transform: scale3d(2,2,1);overflow:hidden;}
 
-figure.sub1 p {
-	position: absolute;
-	height: 70px;
-	width: 225px;
-	margin-left: 15px;
-	margin-top: -250px;
-	padding: 20px;
-	border: 2px solid #94a6a8;
-	color: #94a6a8;
-	text-align: center;
-	text-transform: none;
-	font-size: 90%;
-	opacity: 0;
-	-webkit-transform: scale3d(0.8,0.8,1);
-	transform: scale3d(0.8,0.8,1);
-	-webkit-transform-origin: 50% -100%;
-	transform-origin: 50% -100%;
-}
-figure.sub1:hover p {
-	opacity: 1;
-	-webkit-transform: scale3d(1,1,1);
-	transform: scale3d(1,1,1);
-}
+figure.sub1 p {position: absolute;height: 70px;width: 225px;margin-left: 15px;margin-top: -250px;padding: 20px;border: 2px solid #94a6a8;color: #94a6a8;text-align: center;text-transform: none;font-size: 90%;opacity: 0;-webkit-transform: scale3d(0.8,0.8,1);transform: scale3d(0.8,0.8,1);-webkit-transform-origin: 50% -100%;transform-origin: 50% -100%;}
+figure.sub1:hover p {opacity: 1;-webkit-transform: scale3d(1,1,1);transform: scale3d(1,1,1);}
 
-
-
-
+/*프로그레스바*/
 .bar {  background: #404559;}
 .progress-bar {  overflow: hidden;  width: 100%;}
 .progress-bar span {  display: block;  border-radius: 30px;}
 
-.progress-bar {
-  left: 60%;
-  max-width: 40%;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-          transform: translate3d(-50%, -50%, 0);
-}
+.progress-bar {left: 60%;max-width: 40%;position: absolute;top: 50%;-webkit-transform: translate3d(-50%, -50%, 0);  transform: translate3d(-50%, -50%, 0);}
 
 @-webkit-keyframes loader90 {
 	0% {	width: 0;}
@@ -107,7 +65,7 @@ figure.sub1:hover p {
   -webkit-animation: loader90 3s ease;
           animation: loader90 3s ease;
    -webkit-animation-fill-mode: forwards;
-  background: #605496;
+  background: #7369a0;
   color: #fff;
   padding: 5px;
   width: 0;
@@ -126,7 +84,7 @@ figure.sub1:hover p {
   -webkit-animation: loader80 3s ease;
           animation: loader80 3s ease;
    -webkit-animation-fill-mode: forwards;
-  background: #605496;
+  background: #7369a0;
   color: #fff;
   padding: 5px;
   width: 0;
@@ -145,7 +103,7 @@ figure.sub1:hover p {
   -webkit-animation: loader70 3s ease;
           animation: loader70 3s ease;
    -webkit-animation-fill-mode: forwards;
-  background: #605496;
+  background: #7369a0;
   color: #fff;
   padding: 5px;
   width: 0;
@@ -164,7 +122,7 @@ figure.sub1:hover p {
   -webkit-animation: loader60 3s ease;
           animation: loader60 3s ease;
    -webkit-animation-fill-mode: forwards;
-  background: #605496;
+  background: #7369a0;
   color: #fff;
   padding: 5px;
   width: 0;
@@ -183,24 +141,34 @@ figure.sub1:hover p {
   -webkit-animation: loader40 3s ease;
           animation: loader40 3s ease;
    -webkit-animation-fill-mode: forwards;
-  background: #605496;
+  background: #7369a0;
   color: #fff;
   padding: 5px;
   width: 0;
 }
 
+/*시놉시스 단락*/
+.synopsis{display: block;left: 40%;max-width: 40%;position: relative;top: 70%;}
 
-.synopsis{
-	display: block;
-	left: 40%;
-	max-width: 40%;
-	position: relative;
-	top: 75%;
-}
+/*예매하기 */
+.wrap { width:805px; position: relative; left: 30%; top: 35%; text-align:left; color:#94A6A8;}
+.table {height:325px;  width:100%; margin-top:50px; background-color: rgba(115, 105, 160, 0.1);}
+.top {background-color: rgba(77,69,117,0.7); height:75px;}
+.top>p{font-size: 25px; padding-top: 10%; color: #94A6A8;}
 
+.bottom {margin-top:50px; height: 200px;}
+.link {margin-top:50px;}
+.book {float:left; width:200px;text-align:center;border-left: 1px solid rgba(255,255,255,0.1);}
+.button {border: 1px solid #94A6A8; padding: 10px 35px; border-radius: 6px; color: #94A6A8; text-decoration: none; vertical-align: middle; font-size:17px;}
+.button:hover{ background: linear-gradient(-45deg, #151225 0%,#4d4575 100%);}
 
+/*공연장 정보*/
+section{position:relative; left: 30%; top:40%;  width: 870px;}
+table{width:100%;border-collapse: collapse;}
+.tbl-header{background-color: rgba(77,69,117,0.7);}
+.tbl-content{height:308px;margin-top: 0px;}
 
-/*#43559F, #444C8A, #383E8A, #404559*/
-
-
+th, td{padding: 15px; width: 174px;text-align: center;vertical-align:middle;font: bold 15px play, arial; color: #94A6A8;}
+th{padding-top: 20px;font-size: 17px;}
+td{border-bottom: 1px solid rgba(255,255,255,0.1);background-color: rgba(115, 105, 160, 0.1);}
 
